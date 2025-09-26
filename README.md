@@ -1,16 +1,10 @@
-# new_chatting
+## new chatting 프로젝트
+기존 채팅 플랫폼과 다른 점입니다.
 
-A new Flutter project.
+1. 채팅은 로컬에 저장됩니다. 서버는 중개만 합니다.
+2. 로컬에서 암호화하고 로컬에서 복구합니다. 사용자가 암호화에 참여합니다.
+3. 채팅 기능 외에 다른 건 없습니다.
+4. 서로 실제로 만나야 방을 만들 수 있습니다.
+5. 임베딩 모델을 사용해, 대화의 부적절한 것을 로컬에서 필터합니다.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter 와 cryptography 패키지, 임베딩 젬마(예정)사용합니다.
