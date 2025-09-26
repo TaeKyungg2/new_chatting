@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cryptography/cryptography.dart';
+//import 'package:cryptography/cryptography.dart';
+import 'RoomPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +40,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('Go to priveate chatting room'),
-            TextButton(onPressed: (){}, child: Text('Go'))
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RoomPage(), // 이동할 위젯
+                  ),
+                );
+              },
+              child: Text('Go'),
+            ),
           ],
         ),
       ),
