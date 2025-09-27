@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'chat_room.dart';
 
 class RoomPage extends StatefulWidget {
   const RoomPage({super.key});
@@ -7,6 +8,8 @@ class RoomPage extends StatefulWidget {
 }
 
 class _RoomPageState extends State<RoomPage> {
+  List<ListTile>? roomList;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +17,15 @@ class _RoomPageState extends State<RoomPage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('rooms'),
       ),
-      body: Text('temp'),
+      body: TextButton(
+        child: Text('room1'),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ChatRoom(roomId: 1)),
+          );
+        },
+      ),
     );
   }
 }

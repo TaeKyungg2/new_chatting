@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'room_page.dart';
 //import 'package:cryptography/cryptography.dart';
-import 'RoomPage.dart';
+//import 'package:web_socket_channel/web_socket_channel.dart';
+//import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 25, 82, 0)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 12, 39, 0)),
       ),
       home: const MyHomePage(title: 'newchatting'),
     );
